@@ -64,8 +64,10 @@ function keyPressed() {
   }
 }
 
-function showCannonBalls(cannonBall,index) {
-  cannonBall.display();
+function showCannonBalls(bola,index) {
+  if(bola){
+  bola.display();
+  }
 }
 
 function keyReleased() {
@@ -90,13 +92,10 @@ function criarBarcos() {
         });
         barcos[i].display();
       }
-      else {
-        barcos[i];
-      }
-    }
+          }
   }
   else {
-    var barco = new Boat(width, height - 60, 170, 170, -60);
+    var barco = new Boat(width, height - 60, 170, 17);
     barcos.push(barco);
   }
 
